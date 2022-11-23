@@ -28,10 +28,14 @@ h2{
     font-size: 30px;
 }
 
-#random-button {
+.btn {
   border-radius: 5px;
   border: black 1px solid;
   background-color: transparent;
   cursor: pointer;
   font-size: 25px;
+}
+
+#random-button{
+    margin-bottom: 10px;
 }
