@@ -1,0 +1,37 @@
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    margin: 5px;
+}
+
+h2{
+    margin-top: 0;
+    font-size: 30px;
+}
+
+#random-button {
+  border-radius: 5px;
+  border: black 1px solid;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+}
