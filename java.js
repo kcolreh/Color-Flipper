@@ -2,8 +2,9 @@ const colorButton = document.getElementById('random-button');
 const colorDisplayedText = document.getElementById('color-displayed');
 const wholePage = document.getElementById('whole-page');
 const autoButton = document.getElementById('auto-button');
-const combineButton = document.getElementById('combine-colors');
+const textColorsButton = document.getElementById('text-colors');
 const mainText = document.getElementById('main-text');
+const resetButton = document.getElementById('reset-colors');
 let interval = null;
 
 colorButton.addEventListener('click', () => {
@@ -27,10 +28,17 @@ autoButton.addEventListener('click', () => {
     }
 })
 
-combineButton.addEventListener('click', () => {
+textColorsButton.addEventListener('click', () => {
     generateRandomColor2();
     mainText.style.color = backgroundColor2;
     colorDisplayedText.style.color = backgroundColor2;
+})
+
+resetButton.addEventListener('click', () => {
+    mainText.style.color = 'black';
+    colorDisplayedText.style.color = 'black';
+    wholePage.style.backgroundColor = 'white';
+    colorDisplayedText.textContent = 'Displayed color';
 })
 
 function generateRandomColor() {
