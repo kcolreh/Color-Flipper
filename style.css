@@ -34,8 +34,13 @@ h2{
   background-color: transparent;
   cursor: pointer;
   font-size: 25px;
+  width: 150px;
 }
 
 #random-button{
     margin-bottom: 10px;
+}
+
+#combine-colors{
+    margin-top: 10px;
 }
